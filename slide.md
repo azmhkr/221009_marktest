@@ -1,4 +1,10 @@
 ---
+header-includes:
+    - \setmainfont{Hiragino Mincho ProN}
+    - \setsansfont{Hiragino Maru Gothic ProN}
+    # - \setmonofont{Osaka}
+    - \setmonofont{Cica}
+
 title: Pandoc & Markdownでスライド作成
 author: azmhkr
 ---
@@ -11,7 +17,7 @@ author: azmhkr
 
 Markdownをbeamerスライドに変換するコマンドは，
 ```
-pandoc slide.md -o slide.pdf -t beamer -V theme:metropolis -H header.tex --pdf-engine=xelatex
+pandoc slide.md -o slide.pdf -t beamer -V theme:metropolis --pdf-engine=xelatex
 ```
 日本語を使わないなら，
 ```
