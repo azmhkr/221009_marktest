@@ -1,0 +1,1 @@
+pandocを使ってMarkdownからbeamerスライドを作るためのテンプレート
