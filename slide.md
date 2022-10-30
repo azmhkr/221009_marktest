@@ -9,6 +9,7 @@ title: Pandoc & Markdownでスライド作成
 ---
 
 # コードブロックと数式
+詳細はpandocドキュメントを参照：https://pandoc.org/MANUAL.html
 
 コードブロックが作れます．
 ```
