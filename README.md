@@ -1,7 +1,8 @@
-## Requirements
+## Tested environment
 
-- Tex Live 2022 or newer
-- pandoc 2.19.2 or newr
+- macOS 13.0
+- Tex Live 2022
+- pandoc 2.19.2
 
 ## Getting started
 markdownファイル（slide.md）からbeamerスライド（slide.pdf）を作成するコマンドは，
