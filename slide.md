@@ -1,30 +1,25 @@
 ---
 header-includes:
+    # フォントは任意で変更可
     - \setmainfont{Hiragino Mincho ProN}
     - \setsansfont{Hiragino Maru Gothic ProN}
-    # - \setmonofont{Osaka}
-    - \setmonofont{Cica}
+    - \setmonofont{Osaka}
 
 title: Pandoc & Markdownでスライド作成
-author: azmhkr
 ---
 
-# 環境
+# コードブロックと数式
 
-- Mac OS Monterey 12.6
-- Tex Live 2022
-- pandoc 2.19.2
-
-Markdownをbeamerスライドに変換するコマンドは，
+コードブロックが作れます．
 ```
 pandoc slide.md -o slide.pdf -t beamer -V theme:metropolis --pdf-engine=xelatex
 ```
-日本語を使わないなら，
-```
-pandoc slide.md -o slide.pdf -t beamer -V theme:metropolis
-```
+数式も書けます．
+$$
+e^{i\pi} = -1
+$$
 
-# 見出しで次のページ
+# 段組み
 
 :::::: {.columns}
 ::: {.column width="33%"}
@@ -32,11 +27,10 @@ pandoc slide.md -o slide.pdf -t beamer -V theme:metropolis
 ます．
 :::
 ::: {.column width="33%"}
-数式も，
-$$
-e^{i\pi} = -1
-$$
-書けます．
+- じゃがいも
+- にんじん
+- ぶたにく
+- ばなな
 :::
 ::: {.column width="33%"}
 改行は自動ではされませんので，書きすぎると見切れます．
